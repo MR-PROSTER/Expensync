@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .elegant-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    transition: transform 0.5s ease;
+    z-index: 0;
+  }
+
+  .elegant-btn:hover::after {
+    transform: scale(4);
+  }
+
+  .elegant-btn > * {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+@font-face {
+  font-family: "BrunoAceSC";
+  src: local("BrunoAceSC"),
+    url("./assets/fonts/BrunoAceSC.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "impact";
+  src: local("impact"), url("./assets/fonts/impact.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kicker";
+  src: local("Kicker"), url("./assets/fonts/Kicker.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NIKEA";
+  src: local("NIKEA"), url("./assets/fonts/NIKEA.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "EudoxusSans";
+  src: local("EudoxusSans"),
+    url("./assets/fonts/EudoxusSans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HanyTrial";
+  src: local("HanyTrial"),
+    url("./assets/fonts/HanyTrial.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Tommy";
+  src: local("Tommy"), url("./assets/fonts/Tommy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Ortland";
+  src: local("Ortland"), url("./assets/fonts/Ortland.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Mollen";
+  src: local("Mollen"), url("./assets/fonts/Mollen.otf") format("opentype");
+}
+
+.boton-elegante::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+  z-index: 0;
+  opacity: 0.1;
+}
+
+.boton-elegante:hover::after {
+  transform: scale(4);
+}
+
+.boton-elegante {
+  z-index: 1;
+}
+
+.boton-elegante > * {
+  position: relative;
+  z-index: 1;
+}
