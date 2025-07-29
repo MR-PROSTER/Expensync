@@ -6,6 +6,8 @@ Expensync is a secure, blockchain-powered platform for managing and tracking exp
 
 ---
 
+![image alt](https://github.com/MR-PROSTER/Expensync/blob/580fab44ba2c5b387f333814b8326f3a8ce6064d/Frontend/Dashboard.webp)
+
 ## 🚀 Features
 
 - ✅ **Decentralized File Storage** using IPFS
